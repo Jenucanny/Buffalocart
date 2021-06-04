@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="methods" name="DemoSuite">
+  <test thread-count="5" name="DemoTest">
+  <parameter name="browser" value="firefox"/>
+   <parameter name="url" value="https://buffalocart.com/demo/billing/public/login"/>
+    <classes>
+       <!--class name="com.buffalocart.testscript.LoginTest"/-->
+       <!--class name="com.buffalocart.testscript.ResetPasswordTest"/-->
+      <!--class name="com.buffalocart.testscript.HomeTest"/-->
+      <!--class name="com.buffalocart.testscript.UserManagementTest"/-->
+       <!--class name="com.buffalocart.testscript.UsersTest"/-->
+       <class name="com.buffalocart.testscript.RolesTest"/>
+    </classes>
+  </test> <!-- DemoTest -->
+</suite> <!-- DemoSuite -->

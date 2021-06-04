@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [DemoSuite]" parallel="methods">
+  <test thread-count="5" name="DemoTest(failed)" parallel="methods">
+    <parameter name="browser" value="firefox"/>
+    <parameter name="url" value="https://buffalocart.com/demo/billing/public/login"/>
+    <classes>
+      <class name="com.buffalocart.testscript.RolesTest">
+        <methods>
+          <include name="VerifyaddRoles"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="verifyTableElement"/>
+        </methods>
+      </class> <!-- com.buffalocart.testscript.RolesTest -->
+    </classes>
+  </test> <!-- DemoTest(failed) -->
+</suite> <!-- Failed suite [DemoSuite] -->
